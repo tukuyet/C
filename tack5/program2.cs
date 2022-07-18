@@ -16,7 +16,7 @@ namespace OutputFormat
             Console.WriteLine("Today d format: {0:d}", dt);
             Console.WriteLine("Today D format: {0:D}", dt);
 
-            Console.Readline();
+            Console.ReadLine();
         }   
     }
 }

@@ -37,13 +37,13 @@ namespace Company
           objProducuID = convertr.ToIn32(Console.Readline());
 
           Console.Write("Enter price :");
-          objProductName = Console.Readline();
+          objProductName = Console.ReadLine();
 
           Console.Write("Enter the id of product :");
-          objProducuID = convertr.ToDoubel(Console.Readline());
+          objProducuID = convertr.ToDoubel(Console.ReadLine());
 
           Console.Write("Enter quantity :");
-          objProducuID = convertr.ToIn32(Console.Readline());
+          objProducuID = convertr.ToIn32(Console.ReadLine());
 
           //Converting objects into their relevant types
           //using explicit unboxing 

@@ -21,7 +21,7 @@ class Program
         Console.WriteLine("Teh sqrt of 5:" + z);
         Console.WriteLine("the max value of Int32: " +Int32.MaxValue);
 
-        Console.Readline();
+        Console.ReadLine();
 
     }
  }

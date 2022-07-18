@@ -44,7 +44,6 @@ namespace Company
 
             //Accepting the details of the employee and validating it using if statement
             Console.Write("Enter the ID of employee :");
-            employeeID =  convert.ToIn32(Console.Readline());
             if (employeeID >0)
             {
                 Console.Write("Enter the name of employee:");
@@ -52,20 +51,20 @@ namespace Company
                 if (employeeName !="" && employeeName.Length<48)
                 {
                     Console.Write("Enter date of birth [MM/DD/YYY]: ");
-                    birthDate = convert.ToDateTime(Console.Readline());
+                    birthDate = convert.ToDateTime(Console.ReadLine());
                     int age =(DateTime.Today.Subtract(birthDate)).Days/365;
                     if (age >=18)
                     {
                        Console.Write("Enter gender [H/F]":);
-                       gender= convert.ToChar(Console.Readline())
+                       gender= convert.ToChar(Console.ReadLine())
 
                        Console.WriteLine("Select designation (choose  the number):");
                        Console.WriteLine("1. Manager \n2. System Analyst \n3 Devellaper \n4. Accountant");
                        Console.WriteLine("Enter your choice:");
-                       int choice = Conver.ToInt32(Console.Readline());
+                       int choice = Conver.ToInt32(Console.ReadLine());
 
                        Console.Write("Enter the tenure int year :");
-                       yearsServed =Conver.ToByte(Console.Readline());
+                       yearsServed =Conver.ToByte(Console.ReadLine());
 
                        //Assigning salary based on the designation selected using switch statement
                        switch (choice)
@@ -119,7 +118,7 @@ namespace Company
                     Console.WriteLine("Designation:" +designation);
                     Console.WriteLine("Tenure:" +yearsServed);
                     Console.WriteLine("Salary:{0} S", salary);
-                    Console.WriteLine(":Tax Amount :{0} $"taxAmount);
+                    Console.WriteLine(":Tax Amount :{0} $",taxAmount);
                     Console.WriteLine("Net Salary: {0:F2} $ is rounded off to : {1} $",netSalary,(int)netSalary);
         
                     Console.WriteLine("Bonus:{0} $",bonus);

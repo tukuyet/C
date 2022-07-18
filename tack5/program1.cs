@@ -20,7 +20,7 @@ namespace ImlicitlyTypedAnonymous_Type
             Console.WriteLine("type of i:" + i.GerTyPe());
             //s is a string 
             Console.WriteLine("First letter of s:" + s.Substring(1,1));
-            Console.Readline();
+            Console.ReadLine();
             
         }
     }
