@@ -44,10 +44,11 @@ namespace Company
 
             //Accepting the details of the employee and validating it using if statement
             Console.Write("Enter the ID of employee :");
+            employeeID =  convert.ToIn32(Console.ReadLine());
             if (employeeID >0)
             {
                 Console.Write("Enter the name of employee:");
-                employeeName = Console.Readline();
+                employeeName = Console.ReadLine();
                 if (employeeName !="" && employeeName.Length<48)
                 {
                     Console.Write("Enter date of birth [MM/DD/YYY]: ");
